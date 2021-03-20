@@ -32,3 +32,22 @@
     flex-wrap: wrap;
     max-width: 70%;
 }
+
+@media all and (max-width: 480px) {
+    .card__detailed {
+        flex-direction: column;
+    }
+
+    .flag__detailed {
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .info__borders {
+        display: block;
+    }
+
+    .borders__wrap {
+        margin-top: 1rem;
+    }
+}
