@@ -26,7 +26,7 @@ const Home = () => {
             const url = `https://restcountries.com/v2/${param}`;
             axios.get(url, {
                 params: {
-                    fields: 'name;population;region;capital;flag;callingCodes'
+                    fields: 'name,population,region,capital,flag,callingCodes'
                 }
             })
                 .then((res) => {
