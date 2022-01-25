@@ -13,7 +13,7 @@ const DetailPage = () => {
 
     useEffect(() => {
         const getCountries = (param) => {
-            const url = `https://restcountries.eu/rest/v2/name/${countryn}`;
+            const url = `https://restcountries.com/rest/v2/name/${countryn}`;
             axios.get(url)
                 .then((res) => {
                     const data = res.data
@@ -29,7 +29,7 @@ const DetailPage = () => {
 
     useEffect(() => {
         const getBorder = () => {
-            const url = `https://restcountries.eu/rest/v2/alpha/${code}`;
+            const url = `https://restcountries.com/rest/v2/alpha/${code}`;
             axios.get(url)
                 .then((res) => {
                     const data = res.data
