@@ -23,7 +23,7 @@ const Home = () => {
     //get request, reloads when endpoint changes
     useEffect(() => {
         const getCountries = (param) => {
-            const url = `https://restcountries.eu/rest/v2/${param}`;
+            const url = `https://restcountries.com/rest/v2/${param}`;
             axios.get(url, {
                 params: {
                     fields: 'name;population;region;capital;flag;callingCodes'
